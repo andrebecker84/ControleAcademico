@@ -9,7 +9,9 @@
 <br>
 <p align="center">Aplicativo do Console C# - ControleAcademico</p>
 <br>
-![image](https://github.com/andrebecker84/ControleAcademico/assets/39974878/20a3a1a9-dd3e-4a15-8c8d-343303821a02)
+<p align="center">
+  <img src="https://github.com/andrebecker84/ControleAcademico/assets/39974878/20a3a1a9-dd3e-4a15-8c8d-343303821a02">
+</p>
 
 ---
 
