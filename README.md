@@ -19,9 +19,9 @@
 
 A partir da descrição das funcionalidades do Sistema de Controle Acadêmico (SCA) apresentada anteriormente, realize os exercícios abaixo:
 
-1. Descreva o caso de uso Lançar Notas considerando apenas o fluxo principal;
+1. Descreva o caso de uso Lançar Notas considerando apenas o fluxo principal.
    
-2. Implemente o diagrama de sequência que reflita o caso de uso Lançar Notas, utilizando apenas as classes envolvidas. Não se preocupe com os fluxos condicionais e de repetições;
+2. Implemente o diagrama de sequência que reflita o caso de uso Lançar Notas, utilizando apenas as classes envolvidas. Não se preocupe com os fluxos condicionais e de repetições.
    
 3. Implemente as classes Aluno, Professor, Disciplina e Turma a partir do Diagrama de Classes (DC) abaixo, que não representa exatamente o minimundo do SCA, apresentado anteriormente. O DC omitiu os métodos get, set e toString das classes.
 
