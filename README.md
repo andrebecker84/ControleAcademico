@@ -9,6 +9,7 @@
 <br>
 <p align="center">Aplicativo do Console C# - ControleAcademico</p>
 <br>
+![image](https://github.com/andrebecker84/ControleAcademico/assets/39974878/20a3a1a9-dd3e-4a15-8c8d-343303821a02)
 
 ---
 
@@ -29,5 +30,3 @@ A classe Turma possui três métodos: addAluno, abrirTurma e gerarPauta. O méto
 Você pode implementar as classes e o programa principal em Java ou C#.
 
 4. Teste as classes criadas a partir do programa principal, utilizando a console, e verifique o funcionamento correto dos métodos da classe Turma.
-
-![image](https://github.com/andrebecker84/ControleAcademico/assets/39974878/20a3a1a9-dd3e-4a15-8c8d-343303821a02)
