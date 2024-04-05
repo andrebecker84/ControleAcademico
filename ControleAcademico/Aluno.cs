@@ -1,29 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ControleAcademico
+﻿namespace ControleAcademico
 {
     public class Aluno
     {
-        public int Matricula { get; set; }
-        public string Nome { get; set; }
+        // PROPRIEDADES:
+        public int Matricula { get; set; } // Matrícula do aluno
+        public string Nome { get; set; }   // Nome do aluno
 
-        public Aluno(int matricula, string nome)
-        {
-            Matricula = matricula;
-            Nome = nome;
-        }
 
+        // CONSTRUTORES:
+        // Construtor sem parâmetros
         public Aluno()
         {
-            Matricula = 0;
-            Nome = string.Empty;
+            Matricula = 0;       // Inicializa a matrícula com 0
+            Nome = string.Empty; // Inicializa o nome com uma string vazia
         }
 
-        public void inserirNotas()
+        // Construtor com parâmetros
+        public Aluno(int matricula, string nome) // Construtor com parâmetros
+        {
+            Matricula = matricula; // Inicializa a matrícula
+            Nome = nome;           // Inicializa o nome
+        }
+
+        // Método estático para adicionar um aluno
+        public static Aluno AddAluno(int matricula, string nome)
+        {
+            return new Aluno(matricula, nome);
+        }
+
+        public void InserirNotas()
         {
             Console.WriteLine("Notas inseridas para o aluno: " + Nome);
         }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ControleAcademico
+﻿namespace ControleAcademico
 {
     public class Professor
     {
@@ -23,7 +17,7 @@ namespace ControleAcademico
             Nome = string.Empty;
         }
 
-        public void lancarNotas()
+        public void LancarNotas()
         {
             Console.WriteLine("Lançando notas para os alunos...");
         }

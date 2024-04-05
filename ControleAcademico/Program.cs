@@ -7,21 +7,49 @@ namespace ControleAcademico
     {
         static void Main(string[] args)
         {
-            Disciplina disciplina = new Disciplina(1, "Matemática");
-            Professor professor = new Professor(101, "João Silva");
-            Turma turma = new Turma(1, disciplina);
+            // Criando disciplina e professor
+            Disciplina disciplina = new Disciplina(1, "Rock");
+            Professor professor = new Professor(101, "Axl Rose");
 
-            Aluno aluno1 = new Aluno(1001, "Maria");
-            Aluno aluno2 = new Aluno(1002, "Pedro");
+            // Criando turma
+            Turma turma = new Turma(1, disciplina, professor);
 
-            Console.WriteLine(turma.addAluno(aluno1)); // Saída: Aluno adicionado à turma.
-            Console.WriteLine(turma.addAluno(aluno2)); // Saída: Aluno adicionado à turma.
-            Console.WriteLine(turma.addAluno(new Aluno(1003, "Ana"))); // Saída: Turma cheia.
+            // Criando lista de alunos
+            List<Aluno> alunos = new List<Aluno>
+            {
+                Aluno.AddAluno(10101, "André"),
+                Aluno.AddAluno(10102, "Lucas"),
+                Aluno.AddAluno(10103, "Pedro"),
+                Aluno.AddAluno(10104, "João"),
+                Aluno.AddAluno(10105, "Maria"),
+                Aluno.AddAluno(10106, "José"),
+                Aluno.AddAluno(10107, "Carlos"),
+                Aluno.AddAluno(10108, "Ana"),
+                Aluno.AddAluno(10109, "Paula"),
+                Aluno.AddAluno(10110, "Mariana"),
+                Aluno.AddAluno(10111, "Carla"),
+                Aluno.AddAluno(10112, "Fernanda")
+            };
 
-            Console.WriteLine(turma.gerarPauta());
+            // Adicionando alunos à turma e exibindo resultado
+            foreach (Aluno aluno in alunos)
+            {
+                Console.WriteLine(turma.AddAluno(aluno));
+            }
 
+            // Gerando pauta da turma
+            Console.WriteLine(turma.GerarPauta());
+
+            
+            Console.WriteLine("** Lista de Alunos - Escola **");
+            foreach (Aluno aluno in alunos)
+            {
+                Console.WriteLine(aluno);
+            }
+            Console.WriteLine("");
             // Testando os métodos ToString() das classes
-            Console.WriteLine(aluno1);
+            Console.WriteLine("** Testes de Métodos ToString() das Classes **");
+            Console.WriteLine(alunos[0]);
             Console.WriteLine(professor);
             Console.WriteLine(disciplina);
             Console.WriteLine(turma);
