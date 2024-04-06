@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace ControleAcademico
 {
@@ -40,19 +41,26 @@ namespace ControleAcademico
             // Gerando pauta da turma
             Console.WriteLine(turma.GerarPauta());
 
-            
-            Console.WriteLine("** Lista de Alunos - Escola **");
+            // Exibindo lista de alunos matriculados
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine(" Alunos matriculados [Escola]");
+            Console.WriteLine("------------------------------------------------");
             foreach (Aluno aluno in alunos)
             {
-                Console.WriteLine(aluno);
+                Console.WriteLine($" - [ {aluno.Matricula} ] {aluno.Nome}");
             }
+            Console.WriteLine("------------------------------------------------");
             Console.WriteLine("");
+            
             // Testando os métodos ToString() das classes
-            Console.WriteLine("** Testes de Métodos ToString() das Classes **");
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine(" Testes de Métodos ToString() das Classes");
+            Console.WriteLine("------------------------------------------------");
             Console.WriteLine(alunos[0]);
             Console.WriteLine(professor);
             Console.WriteLine(disciplina);
             Console.WriteLine(turma);
+            Console.WriteLine("------------------------------------------------");
         }
     }
 }
