@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-
-namespace ControleAcademico
+﻿namespace ControleAcademico
 {
     public class Program
     {
